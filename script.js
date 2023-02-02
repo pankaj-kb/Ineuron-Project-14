@@ -1,26 +1,9 @@
-// Adding li ("Hire Me")
-
-let navItems = document.querySelector("header nav ul");
-
-let newNavLi = document.createElement("li");
-
-
-let newA = document.createElement("a");
-newA.href = "./hire-me.html";
-newA.innerText = "Hire Me";
-
-newNavLi.appendChild(newA);
-
-navItems.appendChild(newNavLi);
-
-
 // Task 2 placeholder text
 
 let inputField = document.querySelector(".search-field input");
 
 inputField.placeholder = "Search My Projects";
 
-// Task 3 InnerText
 
 let spanText = document.getElementsByTagName("span");
 
@@ -34,7 +17,6 @@ for (let i = 0; i < spanText.length; i++) {
         spanText[i].innerText = "Ineuron Intelligence Private Ltd"
     }
 }
-
 
 // Task 4 img
 
@@ -51,3 +33,38 @@ let addButtton = document.createElement("button");
 addButtton.innerText = "Support Me";
 
 buttons.appendChild(addButtton);
+
+// Additional
+
+let count = "";
+
+let trackChange = document.querySelector(".progress button");
+
+trackChange.addEventListener("click", () => {
+    // Task 3 InnerText
+    count++;
+    console.log(count);
+    if (count == 1) {
+
+        //Task 1 Adding li ("Hire Me")
+
+        trackChange.innerText = "View Task " + count + " Changes";
+
+        let navItems = document.querySelector("header nav ul");
+
+        let newNavLi = document.createElement("li");
+
+
+        let newA = document.createElement("a");
+        newA.href = "./hire-me.html";
+        newA.innerText = "Hire Me";
+
+        newNavLi.appendChild(newA);
+
+        navItems.appendChild(newNavLi);
+    }
+
+    if (count == 2) {
+
+    }
+})
