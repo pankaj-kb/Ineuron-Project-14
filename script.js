@@ -20,17 +20,25 @@ let inputField = document.querySelector(".search-field input");
 
 inputField.placeholder = "Search My Projects";
 
-// Task 3 InnerText
 
 let spanText = document.getElementsByTagName("span");
 
-for (let i = 0; i <= spanText.length; i++) {
+for (let i = 0; i < spanText.length; i++) {
     if (spanText[i].innerText == "a Freelancer") {
         console.log("yes it works");
         spanText[i].innerText = "an Employee"
-    } 
+    }
     if (spanText[i].innerText == "National and International Client") {
         console.log("this also works");
         spanText[i].innerText = "Ineuron Intelligence Private Ltd"
     }
 }
+
+
+// Task 4 img
+
+let myImg = document.querySelector(".hero-right-section img");
+
+myImg.src = "./Assets/passport.jpg"
+
+// Task 3 InnerText
