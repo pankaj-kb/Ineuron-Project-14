@@ -1,19 +1,3 @@
-// Task 4 img
-
-let myImg = document.querySelector(".hero-right-section img");
-
-myImg.src = "./Assets/passport.jpg"
-
-// Task 5 button
-
-let buttons = document.querySelector(".hero-right-section-btns");
-
-let addButtton = document.createElement("button");
-
-addButtton.innerText = "Support Me";
-
-buttons.appendChild(addButtton);
-
 // Additional
 
 let count = "";
@@ -66,6 +50,26 @@ trackChange.addEventListener("click", () => {
                     spanText[i].innerText = "Ineuron Intelligence Private Ltd"
                 }
             }
+        }
+
+        if (count == 4) {
+            // Task 4 img
+
+            let myImg = document.querySelector(".hero-right-section img");
+
+            myImg.src = "./Assets/passport.jpg"
+        }
+
+        if (count == 5) {
+            // Task 5 button
+
+            let buttons = document.querySelector(".hero-right-section-btns");
+
+            let addButtton = document.createElement("button");
+
+            addButtton.innerText = "Support Me";
+
+            buttons.appendChild(addButtton);
         }
     }
 })
