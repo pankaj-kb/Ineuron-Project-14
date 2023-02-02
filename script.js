@@ -1,3 +1,5 @@
+// Adding li ("Hire Me")
+
 let navItems = document.querySelector("header nav ul");
 
 let newNavLi = document.createElement("li");
