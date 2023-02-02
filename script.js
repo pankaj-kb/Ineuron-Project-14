@@ -20,6 +20,7 @@ let inputField = document.querySelector(".search-field input");
 
 inputField.placeholder = "Search My Projects";
 
+// Task 3 InnerText
 
 let spanText = document.getElementsByTagName("span");
 
@@ -41,4 +42,12 @@ let myImg = document.querySelector(".hero-right-section img");
 
 myImg.src = "./Assets/passport.jpg"
 
-// Task 3 InnerText
+// Task 5 button
+
+let buttons = document.querySelector(".hero-right-section-btns");
+
+let addButtton = document.createElement("button");
+
+addButtton.innerText = "Support Me";
+
+buttons.appendChild(addButtton);
