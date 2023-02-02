@@ -12,3 +12,10 @@ newA.innerText = "Hire Me";
 newNavLi.appendChild(newA);
 
 navItems.appendChild(newNavLi);
+
+
+// Task 2 placeholder text
+
+let inputField = document.querySelector(".search-field input");
+
+inputField.placeholder = "Search My Projects";
