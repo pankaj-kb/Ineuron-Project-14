@@ -7,7 +7,7 @@ let trackChange = document.querySelector(".progress button");
 trackChange.addEventListener("click", () => {
     count++;
     if (count <= 5) {
-        trackChange.innerText = "View Task " + count + " Changes";
+        trackChange.innerText = "Task " + count + " Changes";
         console.log(count);
 
         if (count == 1) {
