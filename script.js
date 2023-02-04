@@ -72,4 +72,8 @@ trackChange.addEventListener("click", () => {
             buttons.appendChild(addButtton);
         }
     }
+
+    if (count == 6) {
+        window.location.reload();
+    }
 })
